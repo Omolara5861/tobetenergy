@@ -10,8 +10,7 @@ if (themeBtn) {
 }
 
 // Set the countdown target date 8 days from now
-const countDownDate = new Date();
-countDownDate.setDate(countDownDate.getDate() + 8);
+const countDownDate = new Date("April 6, 2025 12:00:00").getTime();
 
 const updateCountdown = () => {
     const now = new Date().getTime();
@@ -34,4 +33,4 @@ const updateCountdown = () => {
 };
 
 updateCountdown(); // Initial call
-setInterval(updateCountdown, 1000); // Update every second
+setInterval(updateCountdown, 1000);
